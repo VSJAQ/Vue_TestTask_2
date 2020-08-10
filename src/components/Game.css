@@ -1,0 +1,214 @@
+.gameBoard {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+    height: 420px;
+}
+
+.gameControl {
+    grid-column-start: 3;
+    display: grid;
+    align-items: center;
+    margin: auto;
+}
+
+.allButton {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-column-start: 2;
+    margin: 0 auto; 
+    width: 440px;
+    height: 449px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border:grey solid 2px;
+}
+
+.buttonGreen {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+    background-color: green;
+    border:grey solid 2px;
+    border-radius: 10px;
+}
+
+.buttonBlue {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+    background-color: blue;
+    border:grey solid 2px;
+    border-radius: 10px;
+}
+
+.buttonYellow {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+    background-color: yellow;
+    border:grey solid 2px;
+    border-radius: 10px;
+}
+
+.buttonRed {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+    background-color: red;
+    border:grey solid 2px;
+    border-radius: 10px;
+}
+
+.buttonGreen.active {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+    background-color: green;
+    border:grey solid 2px;
+}
+
+.buttonBlue.active {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+    background-color: blue;
+    border:grey solid 2px;
+}
+
+.buttonYellow.active {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+    background-color: yellow;
+    border:grey solid 2px;
+}
+
+.buttonRed.active {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+    background-color: red;
+    border:grey solid 2px;
+}
+
+.startButton {
+    width: 5em;
+    height: 2em;
+    font-size: large;
+    background-color: #6DABE8;
+    padding: 0.3em 0.6em;
+    border-radius: 10px;
+    outline: royalblue;
+    border: none;
+    margin: 0 auto;
+}
+
+.gameMsg {
+    font-size: large;
+}
+
+.endGameMsg {
+    font-size: large;
+    color: red;
+}
+
+.successGameMsg {
+    font-size: large;
+    color: green;
+}
+
+@media screen and (max-width: 600px) {
+    .game {
+        height: 1000px;
+        width: 600px;
+    }
+
+    .gameBoard {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50%;
+        width: 720px;
+        height: 500px;
+    }
+    
+    .gameControl {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        display: block;
+        align-items: none;
+        margin: 0;
+    }
+
+    .startButton {
+        margin: 0 0;
+    }
+    
+    .allButton {
+        grid-column-start: 1;
+        width: 220px;
+        height: 224px;
+        
+    }
+    
+    .buttonGreen {
+        width: 88px;
+        height: 88px;
+    }
+    
+    .buttonBlue {
+        width: 88px;
+        height: 88px;
+    }
+    
+    .buttonYellow {
+        width: 88px;
+        height: 88px;
+    }
+    
+    .buttonRed {
+        width: 88px;
+        height: 88px;
+    }
+    
+    .buttonGreen.active {
+        margin-left: 7px;
+        margin-top: 7px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .buttonBlue.active {
+        margin-top: 7px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .buttonYellow.active {
+        margin-left: 7px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .buttonRed.active {
+        width: 100px;
+        height: 100px;
+    }
+}
